@@ -11,7 +11,7 @@ fun Application.configureRouting() {
     val rabbitPublisherService by inject<RabbitPublisherService>()
 
     routing {
-        get(){
+        get() {
             call.respondText("Hello World!")
 
         }

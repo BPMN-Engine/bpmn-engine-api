@@ -7,11 +7,8 @@ import com.leo.service.RabbitPublisherService
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
-import kotlinx.coroutines.*
 import org.koin.dsl.module
 import org.koin.ktor.plugin.Koin
-import java.util.concurrent.Executors
-import kotlin.system.measureTimeMillis
 
 
 fun main() {

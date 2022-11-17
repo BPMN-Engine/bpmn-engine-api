@@ -5,7 +5,6 @@ import com.rabbitmq.client.Channel
 import com.rabbitmq.client.Connection
 import com.rabbitmq.client.ConnectionFactory
 import kotlinx.coroutines.*
-import kotlin.time.Duration
 
 
 class RabbitPublisherService {

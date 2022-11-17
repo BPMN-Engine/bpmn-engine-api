@@ -29,8 +29,8 @@ var koin_ktor = "3.2.2"
 dependencies {
 
 
-    implementation ("io.insert-koin:koin-ktor:$koin_ktor")
-    implementation ("io.insert-koin:koin-core:$koin_version")
+    implementation("io.insert-koin:koin-ktor:$koin_ktor")
+    implementation("io.insert-koin:koin-core:$koin_version")
 //    implementation ("org.koin:koin-core-ext:$koin_version")
     implementation("com.rabbitmq:http-client:4.1.2")
     implementation("com.fasterxml.jackson.core:jackson-databind:2.13.1")
@@ -45,7 +45,7 @@ dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation("com.rabbitmq:amqp-client:5.16.0")
 //    implementation(project(":kotlin-bpmn-engine","default"))
- }
+}
 val compileKotlin: KotlinCompile by tasks
 compileKotlin.kotlinOptions {
     jvmTarget = "11"
