@@ -1,5 +1,6 @@
 package com.leo
 
+import RPCClient
 import com.leo.plugins.configureHTTP
 import com.leo.plugins.configureRouting
 import com.leo.plugins.configureSerialization
@@ -21,6 +22,7 @@ fun main() {
 
 val prodModule = module {
     single(createdAtStart = true) { RabbitPublisherService().setupModelExchange() }
+    single(createdAtStart = true) { RPCClient() }
 }
 
 fun Application.module() {

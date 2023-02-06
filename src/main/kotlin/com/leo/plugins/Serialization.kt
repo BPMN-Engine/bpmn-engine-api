@@ -1,6 +1,7 @@
 package com.leo.plugins
 
 import com.fasterxml.jackson.databind.SerializationFeature
+import com.fasterxml.jackson.module.kotlin.jacksonObjectMapper
 import io.ktor.serialization.jackson.*
 import io.ktor.server.application.*
 import io.ktor.server.plugins.contentnegotiation.*
@@ -16,6 +17,7 @@ fun Application.configureSerialization() {
 
     routing {
         get("/json/jackson") {
+
             call.respond(mapOf("hello" to "world"))
         }
     }
